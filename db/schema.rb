@@ -10,12 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170201195343) do
+ActiveRecord::Schema.define(version: 20170202081225) do
 
   create_table "favourite_artists", force: :cascade do |t|
     t.string   "spotify_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "external_urls"
+    t.string   "genres"
+    t.string   "href"
+    t.string   "name"
   end
 
 end

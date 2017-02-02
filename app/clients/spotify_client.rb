@@ -1,9 +1,12 @@
 class SpotyfyClient
+  #connector to Spotyfy
+  #if don't have artist name in query will find by DEFAULT_ARTIST
 
   URL = "https://api.spotify.com/v1/search?type=artist&limit=50&q="
   DEFAULT_ARTIST =  'Eminem'
 
   attr_reader :query, :url, :body
+
 
   def initialize(query)
     @query = query || DEFAULT_ARTIST

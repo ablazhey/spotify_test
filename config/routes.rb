@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root to: "artist#search"
 
   post 'mark_favourite' => 'artist#mark_favourite'
+
+  get 'favourite_artists' => 'artist#favourite_artists'
 end

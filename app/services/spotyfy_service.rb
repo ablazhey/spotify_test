@@ -1,4 +1,5 @@
 class SpotyfyService
+  #Reformat json from Spotyfy
 
   attr_reader :id, :external_urls, :genres, :href, :name
 
